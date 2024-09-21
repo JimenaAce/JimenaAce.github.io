@@ -1,25 +1,32 @@
-nav{
-    background-color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
 }
-
+.nav{
+    background: url(images/fondo.png);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.footer{
+    background-color: aqua;
+}
 ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
-
 li{
     margin: 0;
     padding: 10px;
 }
-
 a {
     text-decoration: none;
     color: #fff;
 }
-
+a[href^='mailto']::before {
+    content: '📧 ';
+}
 li:hover{
   transition: 250ms;
   background-color: #000000;
-}
+} 
