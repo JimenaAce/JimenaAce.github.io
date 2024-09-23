@@ -28,7 +28,7 @@ h2 {
 
 .container .elements {
     background-color: #f991fe;
-    padding: 30px;
+    padding: 25px;
 }
 
 .footer {
@@ -108,7 +108,9 @@ li {
 }
 
 .hobbies img {
-    width: 20%;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .header,
