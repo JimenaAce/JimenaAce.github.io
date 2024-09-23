@@ -78,3 +78,9 @@ a[href^='mailto']::before {
 .botones:hover{
     background-color: pink;
 }
+
+@media (max-width: 900px){
+    .column{
+        width: 50%;
+    }
+}
