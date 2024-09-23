@@ -1,86 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-.header{
+
+.header {
     padding: 20px;
     text-align: center;
     background-color: #92f9f6;
 }
-.nav{
+
+.nav {
     background: url(images/fondo.png);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
-.container{
+
+.container {
     background-color: #f4b2f7;
     padding: 20px;
+    display: block;
 }
-.container .elements{
+
+.container .elements {
     background-color: #f991fe;
     padding: 30px;
 }
-.footer{
+
+.footer {
     background: url(images/fondo.png);
 }
-.nav ul{
+
+.nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
-.nav ul li{
+
+.nav ul li {
     margin: 0;
     padding: 10px;
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
 a[href^='mailto']::before {
     content: '📧 ';
 }
-.nav ul li:hover{
-  transition: 250ms;
-  background-color: blue;
-} 
-.socialmedia img{
+
+.nav ul li:hover {
+    transition: 250ms;
+    background-color: blue;
+}
+
+.socialmedia img {
     height: 60px;
 }
-.container p, li{
+
+.container p,
+li {
     text-align: justify;
     list-style: circle;
 }
-.crypto img{
+
+.crypto img {
     width: 30%;
     margin: 20px;
 }
-.socialmedia, .socialmedia p{
+
+.socialmedia {
+    display: block;
     text-align: center;
 }
-.footer{
+
+.socialmedia p {
+    text-align: center;
+}
+
+.footer {
     color: aliceblue;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
-.botones{
+
+.botones {
     background-color: deeppink;
     margin: 20px;
     width: 20%;
     text-align: center;
     padding: 10px;
 }
-.enlaces p{
+
+.enlaces p {
     text-align: center;
 }
-.botones:hover{
+
+.botones:hover {
     background-color: pink;
 }
 
-@media (max-width: 900px){
-    .column{
-        width: 50%;
-    }
+.container .hobbies img {
+    width: 20%;
+}
+
+.header,
+.nav,
+.footer {
+    clear: both;
 }
