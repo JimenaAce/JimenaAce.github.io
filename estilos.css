@@ -22,7 +22,7 @@ h2{
 }
 .container .elements{
     background-color: #f991fe;
-    padding: 20px;
+    padding: 30px;
 }
 .footer{
     background: url(images/fondo.png);
@@ -56,7 +56,25 @@ a[href^='mailto']::before {
 }
 .crypto img{
     width: 30%;
+    margin: 20px;
 }
 .socialmedia, .socialmedia p{
     text-align: center;
+}
+.footer{
+    color: aliceblue;
+    padding: 20px;
+}
+.botones{
+    background-color: deeppink;
+    margin: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+.enlaces p{
+    text-align: center;
+}
+.botones:hover{
+    background-color: pink;
 }
