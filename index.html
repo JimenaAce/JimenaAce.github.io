@@ -2,91 +2,122 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <title>Mi página web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimena Acevedo | Página Personal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="nav">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="enlaces.html">Enlaces</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header">
-        <h1>Hola, me llamo Jimena :)</h1>
-        <p>Esta es mi página personal para la materia de Criptografía</p>
-    </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <div class="academic elements columns">
-            <h2>Formación académica</h2>
-            <p>En la época de la secundaria, me di cuenta de la afinidad que tengo por
-                la programación y el desarrollo, por lo que decidí estudiar algo
-                relacionado a lo mismo.</p>
-            <ul>
-                <li>Del 2018 al 2021 estudié en el CECyT 9 "Juan de Dios Bátiz" la carrera técnica de Programación,
-                    como me gustó decidí continuarla a nivel superior.
-                </li>
-                <li>En el año 2021 entré a la Escuela Superior de Cómputo del IPN, estudio la carrera de Ingeniería
-                    en Sistemas Computacionales y ya me falta poco para concluirla.</li>
-            </ul>
-        </div>
-        <div class="hobbies elements columns">
-            <h2>Hobbies</h2>
-            <p>Disfruto mucho de hacer algunas actividades como</p>
-            <ul>
-                <li>Jugar basquetbol: Se trata de mi deporte favorito el cual entrené durante aproximadamente
-                    3 años, me gusta mucho porque las cosas pueden cambiar en un minuto, el trabajo en equipo es
-                    muy importante y dependiendo de tus habilidades y fisionomía, puedes adoptar diferentes roles
-                    adentro del equipo.</li>
-                <li>Resolver rompecabezas / Puzzles: Dedicar un rato a resolver puzzles como sudokus, cubos de rubik,
-                    rompecabezas, etc., me brinda mucha satisfacción y es una gran manera de pasar un momento divertido.</li>
-                    <div class="puzzles">
-                        <center>
-                        <img src="images/cube.jpeg">
-                        <img src="images/dodecahedron.jpeg">
-                        <img src="images/puzzle.jpeg">
-                        </center>
-                    </div>
-                <li>Viajar: Me parece que un viaje es una experiencia inolvidable, sea el lugar que sea, conocer nuevos
-                    lugares, climas y personas creo que vale la pena. He estado en diversos estados del país y me parece
-                    increible cómo en cada lugar se vive un estilo de vida diferente.</li>
-                    <center><img src="images/travelling.jpeg"></center>
-            </ul>
-        </div>
-        <div class="crypto elements columns">
-            <h2>Dato criptográfico</h2>
-            <h3>Algoritmo Blowfish</h3>
-            <p>El algoritmo Blowfsh es un codificador de bloques simétricos diseñado por Bruce Schneier en 1993 e
-                incluido en un
-                gran número de conjuntos de codificadores y productos de cifrados.</p>
-            <p>Schneier diseñó este algoritmo como un reemplazo al antiguo DES y evitar problemas de otros algoritmos.
-                Está a disposición del público y puede
-                ser usado libremente por cualquier persona.</p>
-            <center><img src="images/Schneier.jpg" alt="Schneier"></center>
-            <p>Blowfish usa bloques de 64 bits y claves de 32 hasta 448 bits. Usa 16 rondas Feistel y usa llaves que
-                dependen de las cajas-S.</p>
-            <center><img src="images/Blowfish.png"></center>
-        </div>
-        <div class="socialmedia elements">
-            <h2>Contacto</h2>
-            <p>Enviar correo electrónico</p>
-            <address>
-                <a href="mailto:acevedo.romo.jimena.olivia@gmail.com">acevedo.romo.jimena.olivia@gmail.com</a>
-            </address>
-            <p>Redes sociales</p>
-            <a href="https://www.facebook.com/jimena.ace?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png"></a>
-            <a href="https://youtube.com/@jimenaacevedo5824?si=bPFHkP_s-UY9LoI9" target="_blank"><img src="images/tiktok.png"></a>
-            <a href="https://www.tiktok.com/@jimenaacev03?_t=8pwpIjW0G1e&_r=1" target="_blank"><img src="images/youtube.png"></a>
-        </div>
+      <a class="navbar-brand fw-semibold" href="#">Jimena Acevedo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer">
-        Introduction to Cryptography. Profesora: Nidia A. Cortez Duarte
-    </div>
+  </nav>
+
+  <section class="hero">
+    <h1 class="fw-bold mb-3">Hola, me llamo Jimena :)</h1>
+    <p class="lead">Esta es mi página personal para la materia de Criptografía</p>
+  </section>
+
+  <main class="container">
+
+    <section id="formacion" class="section">
+      <div class="card p-4">
+        <h2 class="fw-semibold text-primary mb-3">Formación académica</h2>
+        <p>Formación académica
+          En la época de la secundaria, me di cuenta de la afinidad que tengo por la programación y el desarrollo, por
+          lo que decidí estudiar algo relacionado a lo mismo.
+        </p>
+        <ul>
+          <li>
+            Del 2018 al 2021 estudié en el CECyT 9 "Juan de Dios Bátiz" la carrera técnica de Programación, como me
+            gustó decidí continuarla a nivel superior.
+          </li>
+          <li>En el año 2021 entré a la Escuela Superior de Cómputo del IPN, estudio la carrera de Ingeniería en
+            Sistemas Computacionales y ya me falta poco para concluirla.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <div class="card p-4">
+        <h2 class="fw-semibold text-primary mb-3">Hobbies</h2>
+        <p>Disfruto mucho de hacer algunas actividades como
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h5 class="fw-semibold">
+              Jugar basquetbol: </h5>
+            <p>Se trata de mi deporte favorito el cual entrené durante aproximadamente 3 años, me gusta mucho porque las
+              cosas pueden cambiar en un minuto, el trabajo en equipo es muy importante y dependiendo de tus habilidades
+              y fisionomía, puedes adoptar diferentes roles adentro del equipo.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h5 class="fw-semibold">Resolver rompecabezas / Puzzles: .</h5>
+            <p>Dedicar un rato a resolver puzzles como sudokus, cubos de rubik, rompecabezas, etc., me brinda mucha
+              satisfacción y es una gran manera de pasar un momento divertido</p>
+            <div class="text-center">
+              <img src="images/cube.jpeg" width="120">
+              <img src="images/dodecahedron.jpeg" width="120">
+              <img src="images/puzzle.jpeg" width="120">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5 class="fw-semibold">Viajar:</h5>
+            <p>Me parece que un viaje es una experiencia inolvidable, sea el lugar que sea, conocer nuevos lugares, climas y personas creo que vale la pena. He estado en diversos estados del país y me parece increible cómo en cada lugar se vive un estilo de vida diferente.</p>
+            <div class="text-center">
+              <img src="images/travelling.jpeg" class="img-fluid" width="400">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section text-center">
+      <div class="card p-4">
+        <h2 class="fw-semibold text-primary mb-3">Contacto</h2>
+        <p>Puedes escribirme a:</p>
+        <p><a href="mailto:acevedo.romo.jimena.olivia@gmail.com"
+            class="fw-semibold">acevedo.romo.jimena.olivia@gmail.com</a></p>
+
+        <div class="social-icons mt-3">
+          <a href="https://www.facebook.com/jimena.ace?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png"
+              alt="Facebook"></a>
+          <a href="https://youtube.com/@jimenaacevedo5824" target="_blank"><img src="images/youtube.png"
+              alt="YouTube"></a>
+          <a href="https://www.tiktok.com/@jimenaacev03" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+   Selected Topics of Cryptography · Profesora: Nidia A. Cortez Duarte
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
